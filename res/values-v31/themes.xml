@@ -8,6 +8,7 @@
         <item name="colorPrimaryDark">@color/netrual_color_2</item>
         <item name="colorAccent">@color/system_accent</item>
         <item name="actionBarStyle">@style/BugleActionBar</item>
+        <item name="android:colorBackground">@color/app_background</item>
         <item name="android:textColorHighlight">@color/text_highlight_color</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
@@ -81,6 +82,9 @@
     <style name="BugleTheme.SettingsActivity" parent="BugleTheme">
         <item name="colorPrimary">@color/system_accent</item>
         <item name="colorAccent">@color/system_accent</item>
+        <item name="android:colorBackground">@color/app_background</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:textColorHighlight">@color/text_highlight_color</item>
         <item name="android:windowBackground">@color/netrual_color_2</item>
         <item name="android:textSize">@dimen/settings_list_text_size</item>
