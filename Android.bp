@@ -69,6 +69,9 @@ android_app {
         "androidx.recyclerview_recyclerview",
         "androidx.viewpager_viewpager",
         "androidx.legacy_legacy-support-v13",
+        "com.google.android.material_material_md3",
+        "ExthmSettingsLib",
+        "SettingsLib",
         "colorpicker",
         "libchips",
         "libphotoviewer",
@@ -87,6 +90,7 @@ android_app {
         "10001040",
     ],
     required: [
+        "com.android.messaging_whitelist.xml",
         "libframesequence",
         "libgiftranscode",
     ],
@@ -96,9 +100,15 @@ android_app {
         enabled: true,
     },
 
-    certificate: "platform",
-
     sdk_version: "current",
 
     product_specific: true,
+}
+
+prebuilt_etc {
+    name: "com.android.messaging.allowlist",
+    product_specific: true,
+    sub_dir: "sysconfig",
+    src: "com.android.messaging.allowlist.xml",
+    filename_from_src: true,
 }
